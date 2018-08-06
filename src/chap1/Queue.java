@@ -1,8 +1,5 @@
 package chap1;
-import java.io.IOException;
 import java.util.Iterator;
-import java.util.ListIterator;
-
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -57,7 +54,9 @@ public class Queue<Item> implements Iterable<Item>{
 		return new ListIterator();}
 	private class ListIterator implements Iterator<Item>{
 		private Node curr = first;
+		@Override
 		public boolean hasNext(){	return curr != null;}
+		@Override
 		public Item next(){
 			Item item = curr.item;
 			curr = curr.next;

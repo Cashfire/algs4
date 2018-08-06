@@ -34,11 +34,15 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
 		return null;
 	}
 	
+	@Override
 	public Iterator<Item> iterator(){	return new ReverseArrayIterator();}
 	private class ReverseArrayIterator implements Iterator<Item>{
 		private int i = N;
+		@Override
 		public boolean hasNext(){ return i > 0;}
+		@Override
 		public Item next(){ return arr[i--]; }
+		@Override
 		public void remove() {}
 	}
 

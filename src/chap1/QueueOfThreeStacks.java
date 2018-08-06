@@ -1,7 +1,5 @@
 package chap1;
 
-import javax.print.attribute.Size2DSyntax;
-
 public class QueueOfThreeStacks<Item> {
 	private int N = 0;
 	private ResizingArrayStack<Item> stk_tail_top = new ResizingArrayStack<>();

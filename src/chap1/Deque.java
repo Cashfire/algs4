@@ -1,5 +1,4 @@
 package chap1;
-import java.awt.print.Printable;
 import java.util.Iterator;
 
 public class Deque<Item> implements Iterable<Item>{

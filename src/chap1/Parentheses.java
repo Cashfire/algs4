@@ -1,7 +1,5 @@
 package chap1;
 
-import java.util.Stack;
-
 public class Parentheses<Item> {
 	private Item[] parentheses = (Item[]) new Object[20];
 	private int N = 0;

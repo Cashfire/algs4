@@ -3,8 +3,6 @@
  */
 package chap2;
 
-import java.util.Calendar;
-
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
@@ -58,8 +56,8 @@ public class Selection {
 		}
 			
 		Selection ss = new Selection();
-		ss.sort(doubles);
-		ss.draw(doubles);
+		Selection.sort(doubles);
+		Selection.draw(doubles);
 //		System.out.println(isSorted(doubles));
 		
 	}

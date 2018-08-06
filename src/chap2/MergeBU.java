@@ -5,7 +5,6 @@ package chap2;
 
 import java.util.ArrayList;
 
-import edu.princeton.cs.algs4.Merge;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -112,7 +111,7 @@ public class MergeBU {
 		// TODO Auto-generated method stub
 		Integer[] myarr = {11,20,30,15,21,16,10,17,50,8,12};
 		MergeBU msBu = new MergeBU();
-		msBu.sort(myarr);
+		MergeBU.sort(myarr);
 		System.out.println(isSorted(myarr));
 		for(Integer i: myarr){
 			System.out.print(i+", ");

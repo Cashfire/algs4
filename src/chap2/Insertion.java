@@ -1,11 +1,9 @@
 package chap2;
 
-import java.util.Calendar;
 import java.util.LinkedList;
 
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
 
 public class Insertion {
 	private static boolean less(Comparable v, Comparable w)
@@ -74,8 +72,8 @@ public class Insertion {
 //		}
 		Double[] doubles = {7.7, 8.6, 1.9, 2.9, 4.5, 3.4, 3.5};
 		Insertion ss = new Insertion();
-		ss.sortWithoutExch(doubles);
-		ss.show(doubles);
+		Insertion.sortWithoutExch(doubles);
+		Insertion.show(doubles);
 //		System.out.println(isSorted(doubles));		
 	}
 

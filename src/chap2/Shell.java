@@ -59,8 +59,8 @@ public class Shell {
 		}
 			
 		Shell shell = new Shell();
-		shell.sort(doubles);
-		shell.draw(doubles);
+		Shell.sort(doubles);
+		Shell.draw(doubles);
 //		System.out.println(isSorted(doubles));
 	}
 
