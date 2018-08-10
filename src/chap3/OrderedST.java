@@ -9,9 +9,9 @@ import java.util.TreeMap;
  * ST is based on TreeMay which implements Map interface similar to HashMap class, 
  * but TM is sorted in the ascending order of its keys, while HashMap is unordered.
  */
-public class ST<Key extends Comparable <Key>, Value> implements Iterable<Key>{
+public class OrderedST<Key extends Comparable <Key>, Value> implements Iterable<Key>{
 	private TreeMap<Key, Value> st;
-	public ST(){ st = new TreeMap<Key, Value>(); }
+	public OrderedST(){ st = new TreeMap<Key, Value>(); }
 	
 	public Value get(Key k){
 		if(k == null) throw new IllegalArgumentException("calls get() with null key");
@@ -66,7 +66,7 @@ public class ST<Key extends Comparable <Key>, Value> implements Iterable<Key>{
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ST<String, Double> st = new ST<String, Double>();
+		OrderedST<String, Double> st = new OrderedST<String, Double>();
 		String[] grades = {"A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D", "F"};
 		Double[] GPA = {4.33,4.00, 3.67, 3.33, 3.00, 2.67, 2.33, 2.00, 1.67, 1.00, 0.00 };
 		int n = grades.length;
